@@ -4,6 +4,8 @@
 #include <vector>
 #include <string>
 #include "chatbot.h"
+#include <memory>
+#include "graphedge.h"
 
 
 // forward declarations

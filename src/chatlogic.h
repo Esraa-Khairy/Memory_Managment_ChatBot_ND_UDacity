@@ -4,6 +4,8 @@
 #include <vector>
 #include <string>
 #include "chatgui.h"
+#include "graphnode.h" 
+#include <memory>
 
 // forward declarations
 class ChatBot;
