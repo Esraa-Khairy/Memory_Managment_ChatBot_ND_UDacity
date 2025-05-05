@@ -18,10 +18,10 @@ ChatLogic::ChatLogic()
     ////
 
     // create instance of chatbot
-    _chatBot = std::unique_ptr<std::string>("../images/chatbot.png").release();
+    // _chatBot = std::unique_ptr<std::string>("../images/chatbot.png").release();
 
-    // add pointer to chatlogic so that chatbot answers can be passed on to the GUI
-    _chatBot->SetChatLogicHandle(this);
+    // // add pointer to chatlogic so that chatbot answers can be passed on to the GUI
+    // _chatBot->SetChatLogicHandle(this);
 
     ////
     //// EOF STUDENT CODE
@@ -32,7 +32,7 @@ ChatLogic::~ChatLogic()
     //// STUDENT CODE
     ////
     // delete chatbot instance
-    delete _chatBot; // as it is a raw pointer
+    //delete _chatBot; // as it is a raw pointer
     ////
     //// EOF STUDENT CODE
 }
@@ -148,7 +148,7 @@ void ChatLogic::LoadAnswerGraphFromFile(std::string filename)
                             // create new edge
                             auto edge = std::make_unique<GraphEdge>(id);
 
-                            GraphEdge_ * rawEdge = edge.get();
+                            GraphEdge * rawEdge = edge.get();
                             rawEdge->SetChildNode(childNode->get());
                             rawEdge->SetParentNode(parentNode->get());
                             _edges.push_back(std::move(edge));
