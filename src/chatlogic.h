@@ -3,9 +3,8 @@
 
 #include <vector>
 #include <string>
-#include "chatgui.h"
-#include "graphnode.h" 
 #include <memory>
+#include "chatgui.h"
 
 // forward declarations
 class ChatBot;
@@ -20,7 +19,6 @@ private:
 
     // data handles (owned)
     std::vector<std::unique_ptr<GraphNode>> _nodes;
-    std::vector<std::unique_ptr<GraphEdge>> _edges;
 
     ////
     //// EOF STUDENT CODE
